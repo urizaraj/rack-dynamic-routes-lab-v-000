@@ -11,7 +11,7 @@ class Application
 
       item_name = req.path.split(/items/).last
 
-      inst = @@items.find { |e| e.name == item }
+      item = @@items.find { |i| i.name == item_name }
 
       if inst
         resp.write(inst.price)
