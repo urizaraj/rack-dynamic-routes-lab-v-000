@@ -1,5 +1,5 @@
 class Application
-  @@items [
+  @@items = [
     Item.new('Figs', 200),
     Item.new('Berries', 400)
   ]
