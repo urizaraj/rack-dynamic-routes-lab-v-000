@@ -9,7 +9,7 @@ class Application
     resp = Rack::Response.new
     if req.path.match(/items/)
 
-      item = req.path.split(/items/).last
+      item_name = req.path.split(/items/).last
 
       inst = @@items.find { |e| e.name == item }
 
