@@ -1,8 +1,8 @@
 class Application
-  @@items = [
-    Item.new('Figs', 200),
-    Item.new('Berries', 400)
-  ]
+  # @@items = [
+  #   Item.new('Figs', 200),
+  #   Item.new('Berries', 400)
+  # ]
 
   def call(env)
     req = Rack::Request.new(env)
