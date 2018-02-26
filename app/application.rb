@@ -11,7 +11,9 @@ class Application
 
       item_name = req.path.split(/items/).last
 
+      puts '------------'
       puts item_name
+      puts '------------'
 
       item = @@items.find { |i| i.name == item_name }
 
